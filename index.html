@@ -14,44 +14,37 @@
     <form action="https://formspree.io/bundushathurh@gmail.com" method="POST" autocomplete="on">
         <fieldset>
             <legend>Customer Info</legend>
- 
-                <tr>
-                   <label for="imie">Imię: </label>
-                   <input type="text" name="imie" id="imie" placeholder="enter your name" required autofocus>
-                </tr>
-                <br>
-                <tr>
-                    <label for="numer">Numer telefonu: </label>
-                    <input type="text" name="numer" id="numer" placeholder="enter your telephone" required pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}">
-                    <br>
-                    wzór numeru: 1-234-456-7890
-                </tr>
-                <br>
-                <tr>
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" placeholder="your email" required multiple>
-                    <br>
-                    You can add more then 1 email, just separate each email with a comma
-                </tr>
+
+
+            <label for="imie">Imię: </label>
+            <input type="text" name="imie" id="imie" placeholder="enter your name" required autofocus>
+
+            <br>
+
+            <label for="numer">Numer telefonu: </label>
+            <input type="text" name="numer" id="numer" placeholder="enter your telephone" required pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}">
+            <br> wzór numeru: 1-234-456-7890
+
+            <br>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="your email" required multiple>
+            <br> You can add more then 1 email, just separate each email with a comma
+
 
         </fieldset>
         <fieldset>
-            <table>
-                <legend>Books</legend>
-                <tr>
-                    <select name="book">
+
+            <legend>Books</legend>
+            <select name="book">
               <option value="book 1">book name 1</option>
               <option value="book 2">book name 2</option>
               <option value="book 3">book name 3</option>  
               <option value="book 4">book name 4</option>
               <option value="book 5">book name 5</option>
             </select>
-                </tr>
-                <tr>
-                    <label for="ilosc">&nbsp;&nbsp;Ilość (max 5): </label>
-                    <input type="number" name="ilosc" min="1" max="5" required>
-                </tr>
-            </table>
+            <label for="ilosc">&nbsp;&nbsp;Ilość (max 5): </label>
+            <input type="number" name="ilosc" min="1" max="5" required>
         </fieldset>
         <br>
         <input type="submit" value="Wyślij">
