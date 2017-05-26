@@ -8,9 +8,12 @@
 </head>
 
 <body>
+   Prosty formularz do zamówień
+   <br>
+   <br>
     <form action="https://formspree.io/bundushathurh@gmail.com" method="POST" autocomplete="on">
         <fieldset>
-        <legend>customer info</legend>
+        <legend>Customer Info</legend>
            <table>
             <tr>
             <label for="imie">Imię: </label>
@@ -19,12 +22,12 @@
             <br>
             <tr>
             <label for="numer">Numer telefonu: </label>
-            <input type="text" name="numer" id="numer" placeholder="enter your telephone" required pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}">&nbsp;wzór numeru: 1-234-456-7890
+            <input type="text" name="numer" id="numer" placeholder="enter your telephone" required pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}"><br>wzór numeru: 1-234-456-7890
             </tr>
             <br>
             <tr>
             <label for="email">Email: </label>
-            <input type="email" name="email" id="email"placeholder="your email" required multiple>&nbsp;You can add more then 1 email, just separate each email with a comma
+            <input type="email" name="email" id="email"placeholder="your email" required multiple><br>You can add more then 1 email, just separate each email with a comma
             </tr>
             </table>
         </fieldset>
@@ -41,7 +44,7 @@
             </select>
         </tr>
         <tr>
-           <label for="ilosc">&nbsp;&nbsp;Quantity (max 5): </label>
+           <label for="ilosc">&nbsp;&nbsp;Ilość (max 5): </label>
             <input type="number" name="ilosc" min="1" max="5" required>
         </tr>
         </table>
